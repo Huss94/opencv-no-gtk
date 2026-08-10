@@ -62,7 +62,7 @@ static const float icvAtanTab[8] = { 0.f + _CV_ATAN_CF2, 90.f - _CV_ATAN_CF2,
 };
 
 static const int icvAtanSign[8] =
-    { 0, 0x80000000, 0x80000000, 0, 0x80000000, 0, 0, 0x80000000 };
+    { 0, INT_MIN, INT_MIN, 0, INT_MIN, 0, 0, INT_MIN };
 
 CV_IMPL float
 cvFastArctan( float y, float x )

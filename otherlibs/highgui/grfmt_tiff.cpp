@@ -238,7 +238,7 @@ exit_func:
 
 #else
 
-static const int  tiffMask[] = { 0xff, 0xff, 0xffffffff, 0xffff, 0xffffffff };
+static const int  tiffMask[] = { 0xff, 0xff, -1, 0xffff, -1 };
 
 /************************ TIFF reader *****************************/
 

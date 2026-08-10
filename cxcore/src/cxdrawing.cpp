@@ -1932,7 +1932,7 @@ cvFillConvexPoly( void *img, CvPoint *pts, int npts, CvScalar color, int line_ty
     if( !pts )
         CV_ERROR( CV_StsNullPtr, "" );
 
-    if( npts <= 0 )
+    if( npts )
         CV_ERROR( CV_StsOutOfRange, "" );
 
     if( shift < 0 || XY_SHIFT < shift )
@@ -1973,7 +1973,7 @@ cvFillPoly( void *img, CvPoint **pts, int *npts, int contours,
     if( !pts )
         CV_ERROR( CV_StsNullPtr, "" );
 
-    if( npts <= 0 )
+    if( !npts )
         CV_ERROR( CV_StsNullPtr, "" );
 
     if( shift < 0 || XY_SHIFT < shift )
@@ -2044,7 +2044,7 @@ cvPolyLine( void *img, CvPoint **pts, int *npts,
     if( !pts )
         CV_ERROR( CV_StsNullPtr, "" );
 
-    if( npts <= 0 )
+    if( !npts )
         CV_ERROR( CV_StsNullPtr, "" );
 
     if( shift < 0 || XY_SHIFT < shift )
