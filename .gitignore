@@ -1,0 +1,51 @@
+# Autotools configuration outputs
+/config.status
+/config.log
+/config.cache
+/stamp-h1
+/cvconfig.h
+/opencv.pc
+/Makefile
+
+# Generated Makefiles in subdirectories
+/**/Makefile
+
+# Libtool and compiler outputs
+.libs/
+.deps/
+*.o
+*.lo
+*.la
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+
+# Generated dependency and libtool metadata
+*.Po
+*.Plo
+*.Tpo
+*.loT
+*.libtool
+
+# Build logs and temporary files
+*.log
+*.tmp
+*.bak
+*~
+.#*
+#*
+
+# Test and coverage outputs
+*.gcda
+*.gcno
+*.gcov
+core
+core.*
+
+# Local installation and packaging outputs
+/install/
+/opencv-*.tar.gz
+*.rpm
